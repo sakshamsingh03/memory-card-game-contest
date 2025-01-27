@@ -1,1 +1,56 @@
-/* Write your styles here */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: url('images/card-back.png');
+    background-size: cover;
+}
+
+.card.flipped, .card.matched {
+    background-color: transparent;
+    background-size: cover;
+}
+
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card.flipped, .card.matched {
+    background-color: #4caf50;
+}
+h1{
+    bottom: 90%;
+}
